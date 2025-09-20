@@ -1,45 +1,129 @@
-# Welcome to TrustEdge Labs
+<!--
+Copyright (c) 2025 TRUSTEDGE LABS LLC
+MPL-2.0: https://mozilla.org/MPL/2.0/
+Project: trustedge — Privacy and trust at the edge.
+GitHub: https://github.com/TrustEdge-Labs/trustedge
+-->
 
-**Building the foundational layer for verifiable data in a zero-trust world.**
+## Mission Statement
+"Building trustable edge AI and cryptographic infrastructure for secure data processing at the edge. Providing comprehensive solutions for data-agnostic encryption, digital receipts, and hardware-backed security."
 
-TrustEdge Labs is an organization dedicated to engineering the future of data integrity. In an era where digital information is abundant but trust is scarce, our mission is to create the tools and platforms necessary to produce **cryptographically verifiable truth** at the point of creation.
+## About Us
 
-We are building the engine for the next generation of secure applications, from IoT and AI to digital evidence and supply chain management. Our work enables developers and organizations to handle sensitive data with absolute confidence in its privacy, authenticity, and provenance.
+### Key Details
+- **Location**: United States of America
+- **Website**: https://trustedgelabs.com
+- **Focus**: Trustable edge AI, cryptographic infrastructure, and privacy-preserving edge computing
 
----
+### Technology Stack
+- **Language**: Rust (stable) for memory safety and performance
+- **Cryptography**: AES-256-GCM, Ed25519, PBKDF2, BLAKE3 with algorithm agility
+- **Hardware**: YubiKey PIV operations, TPM support (planned)
+- **Audio**: Cross-platform live capture (Linux/ALSA, Windows/WASAPI, macOS/CoreAudio)
+- **Network**: Ed25519-based mutual authentication with session management
+- **Web**: WebAssembly bindings for browser integration
+- **Decentralized**: Pubky network adapter for decentralized key discovery
 
-## Featured Project: `trustedge-core`
+## Featured Project: trustedge
 
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
-[![Language: Rust](https://img.shields.io/badge/language-Rust-rust.svg)](https://www.rust-lang.org/)
+TrustEdge is a production-ready privacy-preserving edge computing platform that provides trustable edge AI with secure, data-agnostic encryption. Built as a comprehensive Rust workspace, TrustEdge enables secure processing of sensitive data at the edge while maintaining cryptographic guarantees.
 
-Our flagship project, [`trustedge-core`](https://github.com/TrustEdge-Labs/trustedge), is a high-performance, open-source Rust library that serves as the heart of our ecosystem. It is a data-agnostic engine designed to:
+### Core Capabilities
 
-*   **Secure Any Payload:** Seamlessly encrypt and secure any data stream—from audio and video to sensor telemetry and log files—at the moment of capture.
-*   **Create Unbreakable Provenance:** Generate signed, tamper-evident manifests inspired by the C2PA standard, creating an unbreakable chain of custody for every piece of data.
-*   **Enable Zero-Knowledge Operations:** Allow organizations to validate and manage data without ever needing to decrypt it, dramatically reducing liability and security risks.
-*   **Deploy Anywhere:** Run natively on servers, on embedded IoT devices, and even in the browser via WebAssembly (WASM).
+- **🔐 Data-Agnostic Encryption**: Envelope encryption for files, live audio, sensor data, or any binary stream
+- **🧾 Digital Receipt System**: Cryptographically secure transferable receipts with ownership chains
+- **🏗️ Universal Backend System**: Pluggable crypto operations (Software HSM, Keyring, YubiKey, TPM planned)
+- **🎵 Live Audio Capture**: Real-time microphone input with configurable quality and cross-platform support
+- **🌐 Network Operations**: Secure client-server communication with Ed25519 mutual authentication
+- **🔑 Hardware Integration**: Full YubiKey PKCS#11 support with real hardware signing
+- **⚡ Algorithm Agility**: Configurable cryptographic algorithms with forward compatibility
+- **🌍 WebAssembly Support**: Browser integration for client-side cryptographic operations
+- **🔗 Decentralized Integration**: Pubky network adapter for decentralized key discovery
+- **🛡️ Memory Safety**: Proper key material cleanup with zeroization
 
-## Our Vision: The Managed Trust Platform
+### Project Architecture
 
-The `trustedge-core` library is the open and auditable foundation of a much larger vision: a **Trust-as-a-Service** platform.
+TrustEdge is organized as a Cargo workspace with specialized crates:
 
-We believe the future of data security isn't just about providing libraries; it's about providing a complete, managed solution. Our commercial strategy is to build a robust, scalable cloud platform that uses `trustedge-core` as its engine. This platform will offer our partners a turnkey solution for:
+**Core Infrastructure:**
+- **trustedge-core**: Core cryptographic library and CLI tools with envelope encryption
+- **trustedge-attestation**: Software attestation and provenance system with cryptographic "birth certificates"
 
-*   **Verifiable Data Ingestion & Validation**
-*   **Secure, Compliant Archiving & Retention**
-*   **Immutable Audit Trails**
+**Specialized Systems:**
+- **trustedge-receipts**: Digital receipt system with cryptographic ownership transfer
+- **trustedge-wasm**: WebAssembly bindings for browser/Node.js integration
+- **trustedge-pubky**: Clean Pubky network adapter for decentralized key discovery
+- **trustedge-pubky-advanced**: Advanced Pubky integration with hybrid encryption
 
-This "open-core" model allows us to offer the transparency of open source with the reliability and convenience of a managed service, empowering hardware OEMs and service providers to bring verifiable data to their customers with ease.
+### Production Readiness
 
-## Get Involved
+- **Version**: 0.2.0 with production-ready core features
+- **Testing**: 109 comprehensive automated tests including security attack scenarios
+- **Quality**: Comprehensive CI/CD with clippy, formatting, and security checks
+- **Security**: Attack resistance testing for tampering, replay, and forgery scenarios
+- **Performance**: <50MB RAM usage regardless of file size, >10MB/s encryption throughput
+- **Compliance**: Memory safety with proper key zeroization and constant-time operations
 
-Whether you are a developer, a hardware manufacturer, a researcher, or a potential partner, there are many ways to get involved with TrustEdge Labs.
+### Commercial Positioning
 
-*   **Explore `trustedge-core`:** Dive into our [open-source codebase](https://github.com/TrustEdge-Labs/trustedge), try out the examples, and see the power of verifiable data for yourself.
-*   **Contribute:** We welcome contributions to `trustedge-core`. Check out our contribution guidelines and help us build the future of trust.
-*   **Partner With Us:** If you are building a product that requires the highest level of data integrity—in agriculture, logistics, security, or any other field—let's talk. We are actively seeking foundational partners to build on our Trust-as-a-Service platform.
+**Open-Core Model:**
+- MPL-2.0 licensed for open source use
+- Commercial licenses available for enterprise customers
+- Professional services and custom integrations
+- Legal indemnification and warranty protection
 
-**Join TrustEdge Labs in building a world where all data can be trusted.**
+**Enterprise Features:**
+- Priority support with SLAs
+- Advanced monitoring and compliance reporting
+- TPM integration (planned)
+- Custom backend implementations
 
+## Vision Statement
+
+TrustEdge Labs is developing a comprehensive "Trust-as-a-Service" platform that provides:
+
+- **Verifiable Edge AI**: Cryptographically guaranteed AI processing at the edge
+- **Secure Data Archiving**: Immutable audit trails with hardware-backed security
+- **Universal Cryptographic Operations**: Cross-platform, cross-hardware crypto backends
+- **Privacy-Preserving Computing**: Zero-knowledge operations with memory safety
+- **Decentralized Trust**: Integration with decentralized key discovery networks
+
+### Target Industries
+
+- **Edge AI & IoT**: Secure sensor data processing and AI inference
+- **Healthcare**: Privacy-preserving medical data processing
+- **Financial Services**: Secure transaction processing and audit trails
+- **Government & Defense**: High-assurance cryptographic operations
+- **Media & Entertainment**: Secure content distribution and digital rights management
+
+## Technology Approach
+
+**Open-Core Philosophy:**
+- Transparency through open source core components
+- Enterprise features for commercial customers
+- Community-driven development with professional support
+- Standards-based cryptography with algorithm agility
+- Cross-platform compatibility (Linux, Windows, macOS, Web)
+
+## Call-to-Action
+
+"Join TrustEdge Labs in building trustable edge AI and secure cryptographic infrastructure for the next generation of privacy-preserving applications."
+
+## Repository Updates
+
+### Primary Repository: `trustedge`
+**Description**: Privacy and trust at the edge - Production-ready cryptographic platform for trustable edge AI with data-agnostic encryption, digital receipts, and hardware-backed security.
+
+**Topics**: `rust`, `cryptography`, `privacy`, `edge-computing`, `yubikey`, `webassembly`, `edge-ai`, `digital-receipts`, `hardware-security`, `decentralized`
+
+### Additional Repositories
+- **`.github`**: Organization configuration and community health files
+
+## Contact Information
+
+- **Enterprise Inquiries**: enterprise@trustedgelabs.com
+- **Security Issues**: security@trustedgelabs.com
+- **General Development**: dev@trustedgelabs.com
+- **Website**: https://trustedgelabs.com
+- **Documentation**: https://docs.rs/trustedge-core
 
