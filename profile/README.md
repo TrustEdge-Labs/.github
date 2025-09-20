@@ -5,8 +5,7 @@ Project: trustedge — Privacy and trust at the edge.
 GitHub: https://github.com/TrustEdge-Labs/trustedge
 -->
 
-## Mission Statement
-"Building trustable edge AI and cryptographic infrastructure for secure data processing at the edge. Providing comprehensive solutions for data-agnostic encryption, digital receipts, and hardware-backed security."
+**Building trustable edge AI and cryptographic infrastructure for secure data processing at the edge. Providing comprehensive solutions for data-agnostic encryption, digital receipts, and hardware-backed security.**
 
 ## About Us
 
@@ -28,7 +27,7 @@ GitHub: https://github.com/TrustEdge-Labs/trustedge
 
 TrustEdge is a production-ready privacy-preserving edge computing platform that provides trustable edge AI with secure, data-agnostic encryption. Built as a comprehensive Rust workspace, TrustEdge enables secure processing of sensitive data at the edge while maintaining cryptographic guarantees.
 
-### Core Capabilities
+### Trustedge Core Capabilities
 
 - **🔐 Data-Agnostic Encryption**: Envelope encryption for files, live audio, sensor data, or any binary stream
 - **🧾 Digital Receipt System**: Cryptographically secure transferable receipts with ownership chains
@@ -107,7 +106,7 @@ TrustEdge Labs is developing a comprehensive "Trust-as-a-Service" platform that 
 
 ## Call-to-Action
 
-"Join TrustEdge Labs in building trustable edge AI and secure cryptographic infrastructure for the next generation of privacy-preserving applications."
+**Join TrustEdge Labs in building trustable edge AI and secure cryptographic infrastructure for the next generation of privacy-preserving applications.**
 
 ## Repository Updates
 
